@@ -24,8 +24,8 @@ export default class Toolbar extends React.Component {
     setTimeout(() => {
       const selectionRect = isVisible ? getVisibleSelectionRect(window) : undefined;
       const position = selectionRect ? {
-        top: (selectionRect.top) - toolbarHeight,
-        left: selectionRect.left + (selectionRect.width / 2),
+        top: (selectionRect.top + window.scrollY) - toolbarHeight,
+        left: selectionRect.left + window.scrollX + (selectionRect.width / 2),
         transform: 'translate(-50%) scale(1)',
         transition: 'transform 0.15s cubic-bezier(.3,1.2,.2,1)',
       } : {
