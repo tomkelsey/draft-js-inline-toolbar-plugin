@@ -40,7 +40,7 @@
   left: 50%;
   -webkit-transform: translate(-50%) scale(0);
           transform: translate(-50%) scale(0);
-  position: fixed;
+  position: absolute;
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 2px;
