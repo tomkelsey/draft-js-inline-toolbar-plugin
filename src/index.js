@@ -13,13 +13,11 @@ import toolbarStyles from './toolbarStyles.css';
 
 export default (config = {}) => {
   const defaultTheme = { buttonStyles, toolbarStyles };
-
-  const store = createStore({
-    isVisible: false,
-  });
+  const defaultAddLink = undefined;
 
   const {
     theme = defaultTheme,
+    addLink = defaultAddLink,
     structure = [
       BoldButton,
       ItalicButton,
@@ -27,6 +25,11 @@ export default (config = {}) => {
       CodeButton,
     ]
   } = config;
+
+  const store = createStore({
+    isVisible: false,
+    addLink,
+  });
 
   const toolbarProps = {
     store,
