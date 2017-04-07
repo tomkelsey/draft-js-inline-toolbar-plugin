@@ -1,6 +1,6 @@
 {
   "name": "draft-js-inline-toolbar-plugin-custom-ld",
-  "version": "2.0.0-beta9",
+  "version": "2.0.0-beta10",
   "description": "Toolbar Plugin for DraftJS",
   "author": {
     "name": "Benjamin Kniffler",
@@ -31,7 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "decorate-component-with-props": "^1.0.2",
-    "draft-js": ">=0.9.1",
+    "draft-js": ">=0.10.0",
     "draft-js-buttons-custom-ld": "git+https://github.com/tomkelsey/draft-js-buttons.git",
     "find-with-regex": "^1.0.2",
     "immutable": "~3.7.4",
